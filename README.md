@@ -1,17 +1,10 @@
 # Price App API
 
-## Endpoints
-
-public URL:
-https://jnjm2xbk0i.execute-api.ap-southeast-2.amazonaws.com/Prod/asset
-
 ### Get Prices
 
 Retrives prices by asset and filtered by period
-GET https://jnjm2xbk0i.execute-api.ap-southeast-2.amazonaws.com/Prod/asset/bitcoin/price_changes?period=today
+GET https://mkk2t6zoqg.execute-api.ap-southeast-2.amazonaws.com/Prod/asset/bitcoin/price_changes?period=today
 
 ### Update Price
 
-Endpoint to manually trigger the price update
-
-POST https://jnjm2xbk0i.execute-api.ap-southeast-2.amazonaws.com/Prod/asset/update
+A cron task is triggered every 5 minutes to fetch updated prices for ETH and BTC from Coinbase.
