@@ -35,12 +35,6 @@ Resources:
         - AWSLambdaBasicExecutionRole
         - DynamoDBWritePolicy:
             TableName: !Ref priceDbTable
-      Events:
-        PriceApp:
-          Type: Api
-          Properties:
-            Path: /asset/update
-            Method: post
 
   priceReaderAppLambdaFunction:
     Type: AWS::Serverless::Function

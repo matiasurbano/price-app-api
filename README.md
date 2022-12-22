@@ -2,7 +2,8 @@
 
 ## Endpoints
 
-public URL: https://jnjm2xbk0i.execute-api.ap-southeast-2.amazonaws.com/Prod/asset
+public URL:
+https://jnjm2xbk0i.execute-api.ap-southeast-2.amazonaws.com/Prod/asset
 
 ### Get Prices
 
