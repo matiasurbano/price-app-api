@@ -35,6 +35,11 @@ Resources:
         - AWSLambdaBasicExecutionRole
         - DynamoDBWritePolicy:
             TableName: !Ref priceDbTable
+      Events:
+        InvocationLevel:
+          Type: Schedule
+          Properties:
+            Schedule: cron(*/5 * * * ? *)
 
   priceReaderAppLambdaFunction:
     Type: AWS::Serverless::Function
