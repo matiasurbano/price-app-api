@@ -12,16 +12,16 @@ Resources:
       AttributeDefinitions:
         - AttributeName: Asset
           AttributeType: S
-        - AttributeName: Price
-          AttributeType: S
+        - AttributeName: DateUpdated
+          AttributeType: N
       KeySchema:
         - AttributeName: Asset
           KeyType: HASH
-        - AttributeName: Price
+        - AttributeName: DateUpdated
           KeyType: RANGE
       ProvisionedThroughput:
-        ReadCapacityUnits: 5
-        WriteCapacityUnits: 5
+        ReadCapacityUnits: 10
+        WriteCapacityUnits: 100
 
   priceWriterAppLambdaFunction:
     Type: AWS::Serverless::Function
